@@ -1,0 +1,19 @@
+<p>testform works!</p>
+<form action="onSubmit()" [formGroup]="MyForm" (ngSubmit)="onsubmit()">
+  <label for="name">name</label>
+  <input type="text" formControlName="name" />
+  <label for="name">phone</label>
+  <input type="text" formControlName="phone" />
+  <label for="name">mail</label>
+  <input type="text" formControlName="mail" />
+
+  <div class="Grouping" formGroupName="test">
+    <label for="name">first</label>
+
+    <input type="text" formControlName="first" />
+    <label for="name">second</label>
+    <input type="text" formControlName="second" />
+  </div>
+
+  <input type="submit" />
+</form>

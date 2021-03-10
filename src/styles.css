@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+
+  /* overflow-x: hidden; */
+
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.myBtn {
+  background-color: #f7ba34;
+  color: #113e7f;
+}
+.mysecondBg {
+  background-color: #f7f7f7;
+}
+
+.myColor {
+  color: #313131;
+}
+
+.forFooter {
+  background-color: #113e7f;
+  color: white;
+}
+.btn{
+    background-color: #f7ba34;
+    color: #113e7f;
+    border-radius: .5em;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: max-content;
+    font-size: 18px;
+
+}
+
+*:hover{
+  transition: 200ms all ease-in-out;
+}
+.jumbotron{
+  background-color: inherit;
+}

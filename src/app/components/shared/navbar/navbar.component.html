@@ -1,0 +1,31 @@
+<div class="main d-flex justify-content-between ">
+<div class="logo d-flex justify-content-between">
+    <h1 class="mr-5">in<span style='color: orange;'>ACT</span>  </h1>
+    
+<!---->
+<app-megamenu></app-megamenu>
+<!---->
+
+
+
+</div>
+<div class="btns"*ngIf="router.url === '/'">
+    <button class="btn " routerLink='/homepage' (click)='this.Login.Login = !this.Login.Login'>Login</button>
+    <button class="btn ">Signup</button>
+</div>
+<div class="btns" *ngIf="router.url != '/'">
+  <div ngbDropdown class="d-inline-block">
+    <button class="btn myBtn mr-0" id="dropdownBasic1" ngbDropdownToggle>Username</button>
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+      <button ngbDropdownItem>My Courses</button>
+      <button ngbDropdownItem>Profile</button>
+      <button ngbDropdownItem>My Purchases</button>
+      <button ngbDropdownItem>Settings</button>
+      <button ngbDropdownItem>Updatesle</button>
+      <button ngbDropdownItem>Accomplishments</button>
+      <button ngbDropdownItem routerLink='/'>Logout</button>
+
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,181 @@
+.btn{
+    background-color: #113e7f;
+    color: white;
+    border-radius: 2px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  width: -webkit-fill-available;
+    ;
+
+
+}
+/* mini reset */
+.nav,
+.nav a,
+.nav form,
+.nav input,
+.nav li,
+.nav ul {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+li i{
+  margin-left: 60px;
+}
+.nav a {
+  text-decoration: none;
+}
+.nav li {
+  list-style: none;
+}
+
+/* menu container */
+.nav,
+input {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+.nav {
+  cursor: default;
+  display: inline-block;
+  position: relative;
+  z-index: 500;
+}
+
+/* menu list */
+
+
+/* menu links */
+.nav > li > span {
+  background: white;
+  
+  color: black;
+  display: block;
+  font-weight: 200;
+  line-height: 2.5;
+  padding: 0 1.25em;
+  position: relative;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
+  transition: all .3s ease;
+  z-index: 9999999999;
+  height: 100%;
+  width: max-content;
+}
+.nav > li > a:focus,
+.nav > li:hover > a {
+  background: green;
+}
+.nav > li:first-child > a {
+  border-left: none;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* menu dropdown */
+.mega-menu {
+  background: inherit;
+  border: 1px solid #ddd;
+  border-radius: 0 0 3px 3px;
+  opacity: 0;
+  position: absolute;
+  transition: all 300ms ease ;
+  visibility: hidden;
+  width: 100%;
+
+}
+li:hover > .mega-menu {
+  opacity: 1;
+  overflow: visible;
+  visibility: visible;
+  overflow: scroll; 
+   z-index: 99999999999;
+
+}
+
+/* menu content */
+.nav-column {
+  padding: 2.5%;
+  width: 100%;
+  
+}
+.nav-column a {
+  color: #888;
+  display: block;
+  font-weight: bold;
+  line-height: 2.75;
+}
+.nav-column a:hover {
+  color: #2196f3;
+}
+h3 {
+  color: #113e7f;
+  font-size: .85em;
+  font-weight: bold;
+  line-height: 1.15;
+  margin: 1.25em 0 .75em;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.highlight {
+  color: #2196f3;
+}
+.Megabtn{
+    background-color: #113e7f;
+    border-radius:5px;
+    font-size: 18px;
+    
+}
+.menu-wrapper{
+  height: auto;
+  position: absolute;
+  background-color: inherit;
+  width: 50%;
+  height: 50%;
+  display: block;
+}
+.mega-menu{
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 0 0 3px 3px;
+  opacity: 0;
+  position: absolute;
+  transition: all .3s ease .15s;
+  visibility: hidden;
+  left: 200px;
+  top: 0px;
+  display: block;
+  height: 100%;
+ overflow-y: scroll;
+ width: 500px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .btn{
+    width: fit-content;
+    font-size: 7px;
+    padding: 5px;
+  }
+  .nav > li > span{
+    position: relative;
+    margin-left: 0px;
+  }
+  .mega-menu{
+    position: absolute;
+    bottom: 800;
+  }
+  .menu-wrapper{
+    position: absolute;
+    left: 0px;
+    width: 100vw;
+  }
+}
+*{
+z-index: 11111;
+}

@@ -1,0 +1,60 @@
+.forFooter{
+    padding: 20px 150px 10px 90px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.cont{
+    text-align: left;
+    line-height: 30px;
+    padding-left: 90px;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+}
+ul li{
+    font-size: .9rem;
+}
+.Payment li{
+    margin: 5px;
+
+}
+.Payment{
+    padding: 0px;
+    display: flex;
+}
+h4{
+    width: max-content;
+}
+@media only screen and (max-width: 790px) {
+    .forFooter {
+display:flex; 
+padding: 20px; 
+flex-wrap: wrap;
+padding-left: 20px;
+  }
+ul {
+    width: 100%;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+ul li{
+    width: 100%;
+}
+.cont{
+padding: 20px;  
+  line-height: 25px;
+  padding-left: 5px;
+}
+img{
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+}
+h4{
+    width: fit-content;
+}
+  }

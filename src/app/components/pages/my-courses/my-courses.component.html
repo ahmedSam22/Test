@@ -1,0 +1,20 @@
+<div class="p-2 main ">
+<div class="tacing" style='width: 100%;'>
+    HomePage><span style="color: #f7ba34;">   my Courses </span>
+</div>
+  <div class="col-md-12 text-center my-5 ">
+    <h1 style='letter-spacing: 2px; word-spacing: 5px;margin: 0px;'> <b>My Courses</b>   </h1>
+    <h4> <span style="color: #f7ba34;"> All Courses in one place </span> </h4>
+
+  </div>
+  <div class="d-flex justify-content-center myButtons">
+      <button class="btn mr-3 py-1" routerLink='/mycourses/' [routerLinkActive]='["active"]' [routerLinkActiveOptions]="{exact:
+        true}"> <strong>Progress</strong> </button>
+      <button class="btn btn-white ml-3" routerLink='/mycourses/completed' routerLinkActive='active' [routerLinkActiveOptions]="{exact:
+        true}"><strong>Completed</strong></button>
+  </div>
+</div>
+<div class="container mt-5">
+        <router-outlet></router-outlet>
+
+</div>

@@ -1,0 +1,26 @@
+.main{
+    background-color: #113e7f;
+    color: white;
+    position: relative;
+}
+.myButtons{
+    position: absolute;
+    display: block;
+
+    width: 100%;
+    bottom: -15px;
+
+}
+.btn-white{
+    background-color: white;
+}
+
+.btn{
+    background-color: white;
+    box-shadow: 0px 2px 6px 5px rgba(0,0,0,0.10);
+    font-size: 130%;
+
+    
+}.active{
+background-color: #f7ba34;
+}

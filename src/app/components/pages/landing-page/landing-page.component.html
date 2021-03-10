@@ -1,0 +1,93 @@
+<div class="col-md-12 d-flex  cover">
+  <div class="col-md-4 col-sm-12 col-12 p-3 pt-0 cont">
+    <div class="mainCover ">
+      <h1 class=''>
+        Let's Grow Your <span style="color: #113e7f">Education</span> Level Up
+        With E-Learning
+      </h1>
+      <button
+        class="btn mt-3"
+        routerLink="/homepage"
+      >
+        Get Started
+      </button>
+    </div>
+  </div>
+  <div class="col-md-8 col-sm-12 col-12 imgCont">
+    <img
+      src="../../../../assets/HomePage/Inact--Homepage3.png"
+      width="100%"
+      height="80%"
+    />
+  </div>
+</div>
+<div class="">
+  <h1 style="color: #113e7f" class="p-5 col-md-12 col-sm-12 col-12"><b> Popular Tracks </b></h1>
+  <div class="container-fluid d-flex">
+    <div class="col-md-1 col-sm-1 col-1 pt-5">
+      <i class="icofont-curved-left icofont-3x"></i>
+    </div>
+    <div class="mainTracks col-md-10 col-sm-10 col-10 p-2 jumbotron">
+      <div
+        class=" d-flex justify-content-center col-md-2 col-sm-4 col-4  C-card jumbotron"
+        *ngFor="let item of PopularTracks"
+      >
+        <i [class]="item.Icon " class="mb-3" ></i>
+        <p
+          class="col-md-12 d-flex justify-content-center"
+          style=" text-align: center"
+        >
+          {{ item.Cap }}
+        </p>
+      </div>
+    </div>
+    <div class="col-md-1 col-sm-1 col-1 pt-5 Left">
+      <i class="icofont-curved-right icofont-3x "></i>
+    </div>
+  </div>
+</div>
+
+<div class="">
+  <h1 style="color: #113e7f" class="p-5 col-md-12 col-sm-12 col-12"><b> Popular Courses </b></h1>
+  <div class="container-fluid d-flex">
+    <div class="col-md-1 col-sm-1 col-1 pt-5  " >
+      <i class="icofont-curved-left icofont-3x cardIcons"></i>
+    </div>
+    <div class="col-md-10 col-sm-10 col-10 mainourses jumbotron">
+      <div class="C-card2  col-md-3 col-sm-6 col-6" *ngFor="let item of PopularCources">
+        <div class="myImg">
+          <img [src]="item.Img" height="100%" width="100%" alt="" />
+          <span class="price"> ${{ item.Price }} </span>
+        </div>
+        <div class="col-md-6" style="margin-top: 0px;padding-left: 0px;">
+          <span class="d-content ml-2">
+            <ngb-rating
+              class="rate"
+              [max]="5"
+              [rate]="item.Rate"
+              [readonly]="true"
+            ></ngb-rating>
+            <span></span></span
+          >
+        </div>
+        <div class="par ml-0">
+          <h2>{{ item.Header }}</h2>
+          <p>{{ item.Description }}</p>
+        </div>
+        <div class="d-flex justify-content-start p-0 px-1  cardfooter">
+          <div class="enroll col-md-6 col-sm-12 col-12">
+            <i [class]="item.EnrollIcon" class=''></i>
+            <span> {{ item.Enrolled }} Enrolled</span>
+          </div>
+          <div class="enroll col-md-6 col-sm-12 col-12">
+            <i [class]="item.LikeIcon" class='' style="color: red"></i>
+            <span>{{ item.Liked }} Like</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1 col-sm-1 col-1 pt-5 Left">
+      <i class="icofont-curved-right icofont-3x cardIcons"></i>
+    </div>
+  </div>
+</div>
